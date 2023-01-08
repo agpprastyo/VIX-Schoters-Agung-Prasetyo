@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.agprastyo.newsapplication.GlideApp
 import com.agprastyo.newsapplication.R
 import com.agprastyo.newsapplication.models.Article
 import com.bumptech.glide.Glide
@@ -46,10 +47,10 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
         val article = differ.currentList[position]
         holder.itemView.apply {
-            Glide.with(this).load(article.urlToImage).into(ivArticleImage)
+            GlideApp.with(context).load(article.urlToImage).into(ivArticleImage)
             tvSource.text = article.source.name
             tvTitle.text = article.title
-            tvDescription.text = article.description
+//            tvDescription.text = article.description
             tvPublishedAt.text = article.publishedAt
 
             setOnClickListener {

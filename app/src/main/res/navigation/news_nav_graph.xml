@@ -18,7 +18,11 @@
         android:id="@+id/detailFragment"
         android:name="com.agprastyo.newsapplication.ui.fragments.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="article"
+            app:argType="com.agprastyo.newsapplication.models.Article" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.agprastyo.newsapplication.ui.fragments.ProfileFragment"
