@@ -24,7 +24,7 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
 
         webView.apply {
             webViewClient = WebViewClient()
-            loadUrl(article.url)
+            article.url?.let { loadUrl(it) }
         }
 
         fab.setOnClickListener {
