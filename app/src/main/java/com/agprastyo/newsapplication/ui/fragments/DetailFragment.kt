@@ -22,6 +22,8 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
         viewModel = (activity as NewsActivity).viewModel
         val article = argsLazy.article
 
+
+
         webView.apply {
             webViewClient = WebViewClient()
             article.url?.let { loadUrl(it) }
@@ -36,7 +38,10 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
                     Snackbar.LENGTH_SHORT)
                 .show()
         }
+
+
     }
+
 }
 
 

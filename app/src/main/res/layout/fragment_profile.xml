@@ -7,19 +7,35 @@
     tools:context=".ui.fragments.ProfileFragment">
 
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/circleImageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/shadow_profile"
-        android:elevation="2dp"
+
+
         android:src="@drawable/agp11"
+
+
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.3"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadow_profile"
+        app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+        app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+        app:layout_constraintStart_toStartOf="@+id/circleImageView"
+        app:layout_constraintTop_toTopOf="@+id/circleImageView" />
 
     <TextView
         android:id="@+id/textView"
