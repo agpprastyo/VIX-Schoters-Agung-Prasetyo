@@ -4,12 +4,14 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import com.agprastyo.newsapplication.R
 import com.agprastyo.newsapplication.R.id
 import com.agprastyo.newsapplication.R.layout
 import com.agprastyo.newsapplication.db.ArticleDatabase
@@ -51,5 +53,7 @@ class NewsActivity : AppCompatActivity() {
         }
 
         bottomNavigationView.setupWithNavController(navController)
+
+
     }
 }
