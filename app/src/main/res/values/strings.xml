@@ -2,4 +2,8 @@
     <string name="app_name">News application</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="search_now">Search Now</string>
+    <string name="search_icon">Search icon</string>
+    <string name="news_image">News image</string>
+    <string name="news_source">News Source</string>
+    <string name="published_at">Published at</string>
 </resources>
